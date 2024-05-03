@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to top, #e0dfdf, #858484);
+    height: 200pc;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #979595;
+    width: 100%;
+    max-width: 1500px;
+    border-bottom: 1px solid #8b8b8b;
+    padding: 5px;
+    z-index: 9999;
+}
+
+section#header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-logo img {
+    width: 100%;
+    max-height: 50px;
+    background-color: #6E6E6E;
+    border-radius: 100%;
+    box-shadow: -1px 0 1px 1px #3e3e3e;
+    margin-left: 20px;
+    color: #a0a0a0;
+}
+
+section#header-logo h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-left: 3px;
+    color: #b1afaf;
+    text-shadow: 1px 1px 1px #2f2f2f;
+    letter-spacing: 1px;
+}
+
+section#header-logo sup {
+    font-weight: 100;
+    font-size: 0.4em;
+    color: #acaaaa;
+}
+
+nav {
+    width: 100%;
+    max-width: 350px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    display: inline;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #676161;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.07);
+    color: #c3b7b7;
+}
+
+section#header-right {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+section#header-right button {
+    background-color: #b3afaf;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 3px;
+    color: #e3e0e0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0.3px 0.3px 1px 0.5px #6c6c6c;
+    transition: 0.3s;
+    font-size: 1.1em;
+}
+
+section#header-right button:hover {
+    background-color: #d2cece;
+    color: #f3f1f1;
+    transform: scale(1.01);
+}
+
+section#header-right button#log {
+    background-color: #979595;
+    box-shadow: none;
+}
+
+article {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+article section#article-title {
+    font-size: 2.5em;
+    position: absolute;
+    top: 100px;
+    letter-spacing: 1px;
+    color: #343434;
+}
+
+/* section-one */
+section.discount {
+    background-image: linear-gradient(to top, #b8b7b7, #999999);
+    width: 300px;
+    position: absolute;
+    top: 180px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: inset -1px 0px 1px 1px #535252,
+        inset 1px -1px 1px 1px #4a4a4a;
+    transform: scale(1.1);
+    margin-top: 30px;
+}
+
+section .discount-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    background-image: linear-gradient(45deg, #c3c0c0 70%, #5f5f5f 30%);
+    width: 100%;
+    max-width: 100px;
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid #535252;
+}
+
+section .discount-title h3 {
+    font-size: 1.3em;
+    color: #232323;
+    font-weight: 600;
+}
+
+section .discount-price {
+    max-width: 150px;
+    margin-top: -15px;
+}
+
+section .discount-price h2 {
+    font-size: 2.5em;
+    color: #e9e7e7;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+}
+
+section .discount-price sub {
+    font-size: 0.5em;
+    color: #696868;
+    letter-spacing: -1px;
+}
+
+section .discount-personal {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 5px dotted #8d8d8d;
+}
+
+section .discount-personal span {
+    line-height: 25px;
+    font-size: 1.2em;
+    color: #464545;
+}
+
+section .discount-personal span:nth-child(2) {
+    margin-bottom: 30px;
+    line-height: 15px;
+    border-bottom: 5px double #8d8d8d;
+    padding-bottom: 15px;
+}
+
+section .discount-personal p {
+    font-size: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #666666;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+section .discount-buy form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-top: 2px solid #8d8d8d;
+}
+
+section .discount-buy button {
+    background-color: #8d8d8d;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+}
+
+section .discount-buy button:hover {
+    background-color: #757575;
+}
+
+section .discount-buy a {
+    text-decoration: none;
+    color: #545454;
+}
+
+/* section-two */
+article section.discount.two {
+    position: relative;
+    margin-right: -40pc;
+    background-image: linear-gradient(to top, #b8b7b7, #999999);
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: inset -1px 0px 1px 1px #535252,
+        inset 1px -1px 1px 1px #4a4a4a;
+    transform: rotate(4deg) scale(1.05);
+}
+
+/* section-three */
+article section.discount.three {
+    position: relative;
+    margin-left: -40pc;
+    background-image: linear-gradient(to top, #b8b7b7, #999999);
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: inset -1px 0px 1px 1px #535252,
+        inset 1px -1px 1px 1px #4a4a4a;
+    transform: rotate(-5deg) scale(1);
+}
+
+/* join */
+
+section.join {
+    border-top: 3px dotted #6a6a6a;
+    border-bottom: 3px dotted #6a6a6a;
+    padding-bottom: 70px;
+    display: flex;
+    top: 650px;
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.join .join-chat {
+    transform: rotate(calc(var(--r) * 1deg));
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #adadad;
+    max-width: 350px;
+    width: 100%;
+}
+
+section .join-title h3 {
+    font-size: 2em;
+    color: #3e3e3e;
+    letter-spacing: -1px;
+    position: absolute;
+    top: -10px;
+    margin: 15px 30pc 30px 30pc;
+}
+
+.join .join-chat:not(:last-child and :nth-child(5)) {
+    margin: 70px 10px 10px 0px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.join-chat img {
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+    float: left;
+    margin: 3px;
+    box-shadow: -1px 1px 1px 1px #565555;
+}
+
+.join-chat p.name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #565555;
+    letter-spacing: 1px;
+}
+
+.join-chat span {
+    font-size: 1em;
+    color: #303030;
+    letter-spacing: -1px;
+}
+
+.join-chat main p {
+    width: 100%;
+    max-width: 350px;
+    margin: 15px 0 0 0;
+    color: #3d3d3d;
+    text-indent: -50px;
+}
+
+.trial {
+    position: relative;
+    top: 72pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trial ul li {
+    list-style: none;
+    display: inline;
+}
+
+.trial ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    letter-spacing: -1px;
+    color: #1c1b1b;
+}
+
+.trial ul li:nth-child(2) {
+    text-decoration: underline;
+    font-size: .9em;
+    display: flex;
+    justify-content: none;
+    margin-top: -35px;
+    right: 34pc;
+    position: absolute;
+}
+
+.trial ul li a#free {
+    background: linear-gradient(350deg, #828181 50%, #4a4a4a 50%);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 3px;
+    color: #e6ecec;
+    box-shadow: 1px 1px 3px rgb(114, 114, 114);
+    text-shadow: 0 0 5px black;
+}
