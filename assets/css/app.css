@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(to top, #e0dfdf, #858484);
-    height: 200pc;
+    height: 88pc;
 }
 
 header {
@@ -361,6 +361,7 @@ section .join-title h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .trial ul li {
@@ -393,4 +394,79 @@ section .join-title h3 {
     color: #e6ecec;
     box-shadow: 1px 1px 3px rgb(114, 114, 114);
     text-shadow: 0 0 5px black;
+    box-shadow: 0 3px 3px 3px #b3b1b1;
+}
+
+.footer{
+    background-color: #b3b1b1;
+    height: 250px;
+    position: relative;
+    top: 72pc;
+    border-top: 3px double #727272;
+    display: grid;
+    grid-template-areas: 
+    'top top top'
+    'center center center'
+    'bottom bottom bottom';
+}
+
+.footer img{
+    width: 60px;
+    grid-area: top;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px dotted #535252;
+    border-radius: 100%;
+    padding: 0;
+    background: #8f8f8f;
+}
+.footer h2{
+    grid-area: top;
+    margin-top: 40px;
+    margin-left: 80px;
+    letter-spacing: -1px;
+    color: #696868;
+}
+.footer sup{
+    font-size: .5em;
+}
+.footer > a{
+    grid-area: top;
+    position: absolute;
+    right: 30px;
+    background-color: #a0a0a0;
+    width: 30px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 1px 1px #676161;
+    margin-top: 10px;
+    color: #343434;
+}
+.center {
+    grid-area: center;
+    display: flex;
+    justify-content: space-around;
+}
+.center ul li{
+    list-style: none;
+    margin-right: 10px;
+    line-height: 25px;
+}
+.center ul li a{
+    text-decoration: none;
+    color: #646464;
+    font-weight: 600;
+}
+.footer footer{
+    grid-area: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    color: #565555;
+    text-shadow: 1px 1px 1px #4f4f4f;
+    border-top: 1px dotted #6a6a6a;
+    letter-spacing: 1px;
+    padding: 3px;
 }
