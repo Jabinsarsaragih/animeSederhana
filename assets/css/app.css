@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 
 body {
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fira Sans'sans-serif;
     background: linear-gradient(to top, #e0dfdf, #858484);
     height: 88pc;
 }
@@ -72,21 +74,34 @@ nav ul li {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 nav ul li a {
-    display: inline;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 500;
     color: #676161;
     transition: 0.3s;
+    position: relative;
+    margin: 0 20px;
 }
 
 nav ul li a:hover {
     transform: scale(1.07);
     color: #c3b7b7;
+}
+
+nav #marker {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    border-bottom: 5px solid #757575;
+    background: linear-gradient(0deg, #cccbcb33, transparent);
+    transition: 0.5s;
+    pointer-events: none;
+    filter: drop-shadow(0 5px 25px #a8a3a3);
+    text-align: center;
 }
 
 section#header-right {
@@ -397,20 +412,20 @@ section .join-title h3 {
     box-shadow: 0 3px 3px 3px #b3b1b1;
 }
 
-.footer{
+.footer {
     background-color: #b3b1b1;
     height: 250px;
     position: relative;
     top: 72pc;
     border-top: 3px double #727272;
     display: grid;
-    grid-template-areas: 
-    'top top top'
-    'center center center'
-    'bottom bottom bottom';
+    grid-template-areas:
+        'top top top'
+        'center center center'
+        'bottom bottom bottom';
 }
 
-.footer img{
+.footer img {
     width: 60px;
     grid-area: top;
     margin-top: 20px;
@@ -420,17 +435,20 @@ section .join-title h3 {
     padding: 0;
     background: #8f8f8f;
 }
-.footer h2{
+
+.footer h2 {
     grid-area: top;
     margin-top: 40px;
     margin-left: 80px;
     letter-spacing: -1px;
     color: #696868;
 }
-.footer sup{
+
+.footer sup {
     font-size: .5em;
 }
-.footer > a{
+
+.footer>a {
     grid-area: top;
     position: absolute;
     right: 30px;
@@ -443,22 +461,26 @@ section .join-title h3 {
     margin-top: 10px;
     color: #343434;
 }
+
 .center {
     grid-area: center;
     display: flex;
     justify-content: space-around;
 }
-.center ul li{
+
+.center ul li {
     list-style: none;
     margin-right: 10px;
     line-height: 25px;
 }
-.center ul li a{
+
+.center ul li a {
     text-decoration: none;
     color: #646464;
     font-weight: 600;
 }
-.footer footer{
+
+.footer footer {
     grid-area: bottom;
     display: flex;
     justify-content: space-between;
